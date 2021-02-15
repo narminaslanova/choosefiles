@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a3751cb7b1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   
+        <div class="container">
+            <div class="row">
+                <div class="drop-Area w-100 text-center">
+                    <p>Drop images here</p>
+                    <p>or</p>
+                    <p>Upload</p>
+                    <i class="fas fa-cloud-upload-alt" id="upload"></i>
+                    <input type="file" multiple accept="image/*" style="display: none;">
+                </div>
+                <button class="btn  btn-outline-danger mt-3" id="removeAll">Remove all</button>
+            </div>
+            <div class="row mt-3">
+                <table class="table d-none" id="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Image</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Size</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    
+        
+
+        
+   
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
